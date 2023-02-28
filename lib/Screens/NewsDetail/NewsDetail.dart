@@ -39,7 +39,7 @@ class _NewsDetailState extends State<NewsDetail> {
 
     final widgetsBinding = WidgetsBinding.instance;
 
-    widgetsBinding!.addPostFrameCallback((callback) {
+    widgetsBinding.addPostFrameCallback((callback) {
       // การรับค่าจาก arguments
       if (ModalRoute.of(context)!.settings.arguments != null) {
         final Map arguments = ModalRoute.of(context)!.settings.arguments as Map;
